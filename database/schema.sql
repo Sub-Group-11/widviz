@@ -1,0 +1,21 @@
+CREATE TABLE users (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  username VARCHAR(255),
+  email VARCHAR(255)
+);
+
+CREATE TABLE notes (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  user_id INT,
+  content TEXT,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE goals (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  user_id INT,
+  goal_text TEXT,
+  goal_date DATE,
+  status VARCHAR(20) DEFAULT 'pending',
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+); 

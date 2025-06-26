@@ -1,0 +1,13 @@
+Flask
+Flask-Cors
+flask-mysqldb
+bcrypt
+google-api-python-client
+reportlab
+requests
+python-dotenv
+yt-dlp
+openai-whisper
+torch
+whisper
+tqdm 

@@ -1,0 +1,43 @@
+# Existing project-specific ignores
+.env
+token.json
+credentials.json
+__pycache__/
+*.pyc
+*.log
+*.wav
+env/
+node_modules/
+venv/
+dist/
+.DS_Store
+
+# Optional frontend/env config
+frontend/.env
+
+# Python + Pipenv / Poetry (optional environments)
+Pipfile
+Pipfile.lock
+poetry.lock
+
+# IDE/editor config
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Misc auto-generated files
+*.tmp
+*.bak
+*.swp
+*.pdf
+*.sqlite3
+
+# Electron build output
+*.exe
+*.dmg
+*.AppImage
+
+# System-specific junk
+Thumbs.db
+ehthumbs.db

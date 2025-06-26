@@ -1,0 +1,53 @@
+{
+  "name": "widviz",
+  "version": "1.0.0",
+  "description": "Intelligent Video Summarization Desktop App",
+  "keywords": [
+    "video",
+    "summarization",
+    "ai",
+    "ollama",
+    "electron"
+  ],
+  "license": "MIT",
+  "author": "WidViz Team",
+  "type": "commonjs",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "package": "electron-builder --dir",
+    "build": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "^28.3.3",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.widviz.app",
+    "productName": "WidViz",
+    "win": {
+      "target": "nsis",
+      "icon": "assets/icon.ico"
+    },
+    "mac": {
+      "target": "dmg",
+      "icon": "assets/icon.ico"
+    },
+    "linux": {
+      "target": "AppImage",
+      "icon": "assets/icon.ico"
+    },
+    "extraResources": [
+      {
+        "from": "backend",
+        "to": "backend",
+        "filter": [
+          "**/*"
+        ]
+      }
+    ]
+  },
+  "dependencies": {
+    "dotenv": "^16.5.0"
+  }
+}
